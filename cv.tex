@@ -1,0 +1,251 @@
+\documentclass[a4paper,10pt]{article}
+
+%A Few Useful Packages
+\usepackage{marvosym}
+\usepackage{fontspec} 					%for loading fonts
+\usepackage{xunicode,xltxtra,url,parskip} 	%other packages for formatting
+\RequirePackage{color,graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[big]{layaureo} 				%better formatting of the A4 page
+% an alternative to Layaureo can be ** \usepackage{fullpage} **
+\usepackage{supertabular} 				%for Grades
+\usepackage{titlesec}	
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{tikz}
+\usepackage{graphicx,calc}
+
+%% ICONS
+
+\newlength\myheight
+\newlength\mydepth
+\settototalheight\myheight{Xygp}
+\settodepth\mydepth{Xygp}
+\setlength\fboxsep{0pt}
+\newcommand*\inlinegraphics[1]{%
+  \settototalheight\myheight{Xygp}%
+  \settodepth\mydepth{Xygp}%
+  \raisebox{-\mydepth}{\includegraphics[height=\myheight]{#1}}%
+}
+
+\newcommand{\personalLogo}{\includegraphics[height=1.2em]{Icons/personal.png}\hspace{3mm}}%
+\newcommand{\introductionLogo}{\includegraphics[height=1.4em]{Icons/reseña.png}\hspace{3mm}}%
+\newcommand{\educationLogo}{\includegraphics[height=1.3em]{Icons/education.png}\hspace{3mm}}%
+\newcommand{\skillsLogo}{\includegraphics[height=1.6em]{Icons/skills.png}\hspace{3mm}}%
+\newcommand{\languagesLogo}{\includegraphics[height=1.4em]{Icons/languages.png}\hspace{3mm}}%
+\newcommand{\workLogo}{\includegraphics[height=1.4em]{Icons/work.png}\hspace{3mm}}%
+\newcommand{\computerLogo}{\includegraphics[height=1.6em]{Icons/computer.png}\hspace{3mm}}%
+\newcommand{\linkedin}{\includegraphics[height=1.4em]{Icons/linkedin.png}\hspace{3mm}}%
+\newcommand{\courseLogo}{\includegraphics[height=1.4em]{Icons/course.png}\hspace{3mm}}%
+\newcommand{\prizeLogo}{\includegraphics[height=1.4em]{Icons/prize.png}\hspace{3mm}}%
+
+
+%\newcommand{\Linkedin}{\includegraphics[scale=0.02]{Icons/linkedin.png}}%
+
+
+
+
+
+\usepackage[spanish]{babel}
+
+
+%Setup hyperref package, and colours for links
+\usepackage{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+%FONTS
+\defaultfontfeatures{Mapping=tex-text}
+%\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin}
+%%% modified for Karol Kozioł for ShareLaTeX use
+\setmainfont[
+SmallCapsFont = Fontin-SmallCaps.otf,
+BoldFont = Fontin-Bold.otf,
+ItalicFont = Fontin-Italic.otf
+]
+{Fontin.otf}
+%%%
+
+%CV Sections inspired by: 
+%http://stefano.italians.nl/archives/26
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\vspace{-1.4em}\hspace{2em}\titlerule]
+\titlespacing{\section}{0pt}{3pt}{3pt}
+%Tweak a bit the top margin
+%\addtolength{\voffset}{-1.3cm}
+
+%Italian hyphenation for the word: ''corporations''
+%\hyphenation{im-pre-se}
+
+%-------------WATERMARK TEST [**not part of a CV**]---------------
+\usepackage[absolute]{textpos}
+
+\setlength{\TPHorizModule}{30mm}
+\setlength{\TPVertModule}{\TPHorizModule}
+\textblockorigin{2mm}{0.65\paperheight}
+\setlength{\parindent}{0pt}
+
+%--------------------BEGIN DOCUMENT----------------------
+\begin{document}
+
+%WATERMARK TEST [**not part of a CV**]---------------
+%\font\wm=''Baskerville:color=787878'' at 8pt
+%\font\wmweb=''Baskerville:color=FF1493'' at 8pt
+%{\wm 
+%	\begin{textblock}{1}(0,0)
+%		\rotatebox{-90}{\parbox{500mm}{
+%			Typeset by Alessandro Plasmati with \XeTeX\  \today\ for 
+%			{\wmweb \href{http://www.aleplasmati.comuv.com}{aleplasmati.comuv.com}}
+%		}
+%	}
+%	\end{textblock}
+%}
+
+\pagestyle{empty} % non-numbered pages
+
+\font\fb=''[cmr10]'' %for use with \LaTeX command
+
+%--------------------TITLE-------------
+\par{\centering
+		{\Huge  \textsc{ Hector David Aguirre Arista}
+	}\bigskip\par}
+
+%--------------------SECTIONS-----------------------------------
+%Section: Personal Data
+\section{ \raisebox{-.3\baselineskip}{\personalLogo}\textsc{Información Personal}}
+
+\begin{tabular}{rl}
+    \textsc{Lugar y Fecha de Nacimiento:} & \textsc{Cajamarca - Perú  | 22 Marzo de 1996} \\
+    \textsc{Dirección:} & \textsc{Jirón Apomayta 532 - San Juan de Lurigancho - Lima} \\
+    \textsc{Teléfono:} & 979277722\\
+    \textsc{email:} & \href{mailto:hector.aguirre@pucp.pe}{hector.aguirre@pucp.pe}\\
+    \textsc{Linkedin:} & \href{https://www.linkedin.com/in/haguirrear/}{www.linkedin.com/in/haguirrear}\\
+\end{tabular}
+
+\section{\raisebox{-.3\baselineskip}{\introductionLogo}Reseña}
+  Bachiller en Ingeniería Mecatrónica con interés en temas de Machine Learning, Data Science, Internet de las Cosas, Diseño 3D y Automatizacion. Dominio de los idiomas inglés y alemán, lenguajes de programación (C, C++, C\#, Python, Dart) y software de Business Analytics (Power BI), así como de software CAD (Inventor, Fusion 360, AutoCAD). En búsqueda de aportar con la sociedad generando un impacto positivo con los proyectos que realice. Aficionado a la fotografía, lectura y deporte.
+
+%Section: Work Experience at the top
+
+
+%Section: Education
+\section{\raisebox{-.3\baselineskip}{\educationLogo}Educación}
+\begin{tabular}{r|l}	
+\emph{\textsc{Mar 2013 - Dic 2018}} & \textbf{PONTIFICIA UNIVERSIDAD CATÓLICA DEL PER\'U} \\
+ & \emph{\textsc{Ingeniería Mecatrónica}}\\ 
+& \footnotesize{{Bachiller en Ingeniería Mecatrónica - Décimo superior}}\\
+\\
+\emph{\textsc{Oct 2017 - Mar 2018}} & \textbf{UNIVERSIT{\"A}T DUISBURG-ESSEN} \\
+ & \emph{Elektrotechnik und Informationstechnik} \\
+ & \footnotesize{\textsc{Semestre de intercambio (Alemania)}} \\
+ \multicolumn{2}{c}{}
+\end{tabular}
+
+\section{\raisebox{-.3\baselineskip}{\skillsLogo}Habilidades}
+\begin{itemize}
+	\item \emph{\textsc{Liderazgo:}} \\Fui \textbf{Representante Estudiantil} ante  el consejo de la facultad  de \textbf{Estudios Generales Ciencias} de la PUCP y llevé a cabo proyectos que llevaron a la mejora de esta, como cambios en la malla curricular y mejoras en la infraestructura.
+	\item \emph{\textsc{Proactividad:}}\\ Pertenecí a la \textbf{Sección Estudiantil de Dirección de Proyectos}, SEDIPRO. En donde llevé a cabo diversos proyectos con la finalidad de promover las buenas prácticas en gestión de proyectos.
+	\item \emph{\textsc{Responsabilidad:}}\\ Egresé de la PUCP en el 7mo puesto de mi promoción.
+	\item \emph{\textsc{Comunicación:}}\\ Trabajé durante dos ciclos como \textbf{Instructor} del curso \emph{Herramientas de Simulación}, curso del 6to ciclo de la carrera de Ing. Mecatrónica en el que se enseña a modelar sólidos en 3D usando Inventor y realizar tanto simulaciónes diámicas como análisis de elementos finitos a diversas máquinas o estructuras.
+\end{itemize}
+
+%Section: Languages
+\section{\raisebox{-.3\baselineskip}{\languagesLogo}Idiomas}
+\bgroup
+\def\arraystretch{1.3}%  1 is the default, change whatever you need
+\begin{tabular}{r
+>{\raggedright\arraybackslash}p{11cm}}
+\textsc{Inglés:}&Avanzado\newline \footnotesize{\textsc{Idiomas Católica}}\\
+\textsc{Alemán:}&B2/1 Completo \newline \footnotesize{\textsc{Goethe Institut}} \newline \footnotesize{6 meses meses de Intercambio en Alemania} \\
+\end{tabular}
+\egroup
+
+\section{\raisebox{-.3\baselineskip}{\workLogo}Experiencia de Trabajo}
+\begin{tabular}{r|p{11cm}}
+ \emph{Mar 2016 - Dic 2016} & Instructor del curso \emph{Herramientas de simulación} en la \\&\emph{\textsc{Pontificia Universidad Católica del Per\'u}}\\&\footnotesize{El curso de \emph{Herramientas de simulación} tiene como objetivo enseñar a los estudiantes de Ingeniería Mecatrónica a modelar objetos en softwares como Inventor y Ansys, realizar simulaciones dinámicas y análisis de elementos finitos a estructuras.
+ }\\&\\
+  \emph{Ene 2017 - Jul 2017} & Practicante como  \emph{Programador} en la empresa \\&\emph{\textsc{Novatronic}}\\&\footnotesize{La empresa Novatronic se especializa en desarrollar software y soluciones transaccionales. Trabajando en ella, tuve la oportunidad de participar activamente en diferentes proyectos de desarrollo de software. En estos proyectos desarrollé programas en C y C\#, usando también SQL para manejar las bases de datos. Además participé también en la gestión de estos proyectos, en donde estuve encargado de que estos se completaran correctamente.}\\&\\
+    \emph{Abr 2018 - Dic 2018} & Practicante en el Laboratorio de Economía Experimental \\&\emph{\textsc{Pontificia Universidad Caólica del Per\'u}}\\&\footnotesize{El Laboratorio de Economía Experimental (LEEX) se encarga de realizar experimentos para investigaciones relacionadas a la toma de decisiones. Estos experimentos son programados usando python. Trabajando aquí, adquirí experiencia en el manejo de sistemas operativos basados en Linux, en programación usando python; y en el mantenimiento de servidores usando AWS, en el que se alojaba una página web usada por LEEX.}\\&\\
+    \emph{Feb 2018 - Jul 2018} & Trainee Supplier Development Engineer \\&\emph{American Glass Products}\\&\footnotesize{AGP es una empresa que se encarga de fabricar y diseñar vidrio laminado para las principales marcas de automóviles del mundo, como Tesla, McLaren y BMW. En este puesto se me asigna la tarea de gestionar y desarrollar a los proveedores que usa la empresa para producir  los productos finales. Esto involucró aprender acerca de los \emph{Automotive Core Tools} (Las herramientas para gestionar la calidad en la industria automotriz) y Power BI (Herramienta de Business Intelligence).}
+\end{tabular}
+
+
+
+\section{\raisebox{-.3\baselineskip}{\computerLogo}Habilidades Computacionales}
+
+
+\bgroup
+\def\arraystretch{1.3}%  1 is the default, change whatever you need
+\begin{tabular}%
+{>{\raggedleft\arraybackslash}p{3cm}%
+>{\raggedright\arraybackslash}p{11cm}%
+}
+\textsc{Lenguajes de Programación} & \textbullet \hspace{0.5em}\textit{Python:} Implementación de algoritmos de machine learning e \hspace*{0.95em}Inteligencia Artificial.\\
+ & \textbullet \hspace{0.5em}\textit{C\# :} Desarrollo de aplicaciones con GUI.\\
+& \textbullet \hspace{0.5em}\textit{C:} Desarrollo de APIs y programación de sistemas embebidos. \\
+& \textbullet \hspace{0.5em}\textit{C++ :} Desarrollo de APIs y GUIs.\\
+& \textbullet \hspace{0.5em}\textit{Dart:} Desarrollo de Apps con \textit{Flutter}. \\
+\end{tabular}
+\vspace{1em}
+
+\begin{tabular}%
+{>{\raggedleft\arraybackslash}p{3cm}%
+>{\raggedright\arraybackslash}p{11cm}}
+%\textbullet \hspace{0.5em}\textit{Matlab:} Nivel Intermedio. Con experiencia en procesamiento de \hspace*{0.95em}señales e imágenes  y diseño de sistemas de control. \\
+\multirow{2}{3cm}{\raggedleft\textsc{Conocimiento en Software}} &  \textbullet \hspace{0.5em}\textit{Word, Powerpoint y Excel:} Nivel Avanzado. \\
+& \textbullet \hspace{0.5em}\textit{Inventor:} Nivel Anvanzado. Diseño de objetos en 3D y planos. \\
+& \textbullet \hspace{0.5em}\textit{Fusion 360:} Nivel Anvanzado. Diseño de objetos en 3D y planos. \\
+& \textbullet \hspace{0.5em}\textit{Eagle:} Nivel Intermedio. Diseño de tarjetas electrónicas.\\
+& \textbullet \hspace{0.5em}\LaTeX: Nivel Intermedio.\\
+& \textbullet \hspace{0.5em}\textit{ANSYS Workbench:} Nivel Intermedio. Simulación de piezas \hspace*{0.95em}mecánicas.\\
+& \textbullet \hspace{0.5em}\textit{Sistemas basados en Linux:} Nivel Intermedio.\\
+& \textbullet \hspace{0.5em}\textit{SQL:} Nivel Intermedio. Manejo de base de datos y stored procedures.\\
+%& \textbullet \hspace{0.5em}\textit{Ladder:} Nivel Intermedio.\\
+\end{tabular}
+\egroup
+
+
+\section{\raisebox{-.3\baselineskip}{\courseLogo}Cursos y Seminarios}
+
+\bgroup
+\def\arraystretch{1.5}%  1 is the default, change whatever you need
+\begin{tabular}{
+>{\raggedleft\arraybackslash}p{3cm}%
+>{\raggedright\arraybackslash}p{11cm}}
+ \textsc{Self Organising Embedded Systems}  & Curso de la maestría de Ingeniería de Sistemas Embebidos \newline \footnotesize{\textsc{Universit\"at Duisburg-Essen (Alemania)}}\\
+\textsc{Information Mining} & Curso de la maestría de Informática Aplicada \newline \footnotesize{\textsc{Universit\"at Duisburg-Essen (Alemania)}}\\
+\end{tabular}
+\egroup
+
+\section{\raisebox{-.3\baselineskip}{\prizeLogo}Reconocimientos}
+\bgroup
+\def\arraystretch{1.1}%  1 is the default, change whatever you need
+\begin{tabular}{
+>{\raggedleft\arraybackslash}p{3cm}%
+>{\raggedright\arraybackslash}p{11cm}}
+ \multirow{2}{3cm}{\raggedleft\textsc{Primer Puesto} \break Jun 2019}  & 5ta Hackatón organizada por la \textit{Sociedad Nacional de Minería, Petróleo y Energía} (Per\'u) y por la CDE ESAN \\
+  & \footnotesize{Solución Dtech: Sistema distribuido para monitoreo en tiempo real de la calidad de aire y alerta temprana ante eventos críticos.}\\
+  & \footnotesize{\raisebox{-.3\baselineskip}{\includegraphics[height=1.3em]{Icons/link.png}} \href{https://perumin.com/perumin34/notas-de-prensa/estudiantes-de-la-pucp-crean-sistema-de-alerta-ante-accidentes-en-minas-subterraneas}{https://perumin.com/perumin34/notas-de-prensa/estudiantes-de-la-pucp-crean-sistema-de-alerta-ante-accidentes-en-minas-subterraneas}}
+  
+ 
+\end{tabular}
+\egroup
+
+%Section: Scholarships and additional info
+%\section{Scholarships and Certificates}
+%\begin{tabular}{rl}
+% \textsc{Sept.} 2006 & Scholarship for graduate students with an outstanding curriculum \footnotesize(\EURcr 30,000)\normalsize\\
+%\textsc{June} 2006 & {\textsc{Gmat}\textregistered}\setmainfont[SmallCapsFont=Fontin-SmallCaps.otf]{Fontin.otf}: 730 (\textsc{q:50;v:39}) 96\textsuperscript{th} percentile; \textsc{awa}: 6.0/6.0 (89\textsuperscript{th} percentile)
+%\end{tabular}
+
+%\section{Intereses y Actividades}
+%Technology, Open-Source, Programming\\
+%Paradoxes in Decision Making, Psychoanalysis, Behavioural Finance\\
+%, Travelling
+
+
+%\newpage
+%\hypertarget{gmat}{\textsc{Gmat}\setmainfont{LMRoman10 Regular}\textregistered\setmainfont[SmallCapsFont=Fontin-SmallCaps]{Fontin-Regular}}
+
+%\XeTeXpdffile ''GMAT.pdf'' page 1 scaled 800
+
+\end{document}
