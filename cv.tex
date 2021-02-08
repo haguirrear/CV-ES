@@ -14,6 +14,7 @@
 \usepackage{multirow}
 \usepackage{tikz}
 \usepackage{graphicx,calc}
+\usepackage{longtable}
 
 %% ICONS
 
@@ -123,9 +124,27 @@ ItalicFont = Fontin-Italic.otf
 \end{tabular}
 
 \section{\raisebox{-.3\baselineskip}{\introductionLogo}Reseña}
-  Bachiller en Ingeniería Mecatrónica con interés en temas de Machine Learning, Data Science, Internet de las Cosas, Diseño 3D y Automatización. Dominio de los idiomas inglés y alemán, lenguajes de programación (C, C++, C\#, Python, Dart) y software de Business Analytics (Power BI), así como de software CAD (Inventor, Fusion 360, AutoCAD). En búsqueda de aportar con la sociedad generando un impacto positivo con los proyectos que realice. Aficionado a la fotografía, lectura y deporte.
+  Bachiller en Ingeniería Mecatrónica con interés en temas de Machine Learning, Data Science, Internet de las Cosas y  Desarrollo de software. Dominio de los idiomas inglés y alemán, lenguajes de programación (C, C++, Python, Dart, Javascript) y software de Business Analytics (Power BI), así como de software CAD (Inventor, Fusion 360, AutoCAD). En búsqueda de aportar con la sociedad generando un impacto positivo con los proyectos que realice. Aficionado a la fotografía, lectura y deporte.
 
 %Section: Work Experience at the top
+\section{\raisebox{-.3\baselineskip}{\workLogo}Experiencia de Trabajo}
+\begin{longtable}{r|p{11cm}}
+  \emph{Dic 2019 - A la Fecha} & Backend Developer \\&\emph{Simple Perú}\\&\footnotesize{Simple Perú es una empresa que se brinda soluciones tecnológicas a medida (Aplicaciones web, APIs REST, aplicaciones móviles y proyectos de IoT). Al trabajar aquí he tenido la oportunidad de desarrollar REST APIs para diferentes proyectos usando \emph{Python}, \emph{Flask} y \emph{PostgreSQL}. Además desarrollé también aplicaciones móviles tanto para Android como para iOS usando \emph{Flutter}. Participé también en el despliegue y mantenimiento de las aplicaciones en los servidores, tanto en ambientes de desarrollo como de producción, usando \emph{Docker} y los servicios de \emph{AWS}.}\\&\\
+
+  \emph{Dic 2020 - A la fecha} & Desarrollo de una aplicación móvil de capacitación sobre el COVID para la primera linea en las regiones de la selva del Perú. \\& \emph{GIZ (Sociedad Alemana de Cooperación Internacional)}\\ & \footnotesize{
+    Como parte de uno de los proyectos de GIZ se tenía el proveer al \emph{MINSA} (Ministerio de Salud del Perú) de una aplicación móvil que permitiera la capacitación del personal de salud de primera linea en las comunidades nativas de la Selva del Perú. Fui contratado como proveedor junto a Karlo Verde (Compañero desarrollador) para realizar la aplicación móvil. Yo me encargué de desarrollar el backend (Se usó \emph{Python} y \emph{Fastapi} como framework) que contiene toda la información que necesita la aplicación móvil y su despliegue y mantenimiento en un servidor (Usando \emph{Docker} y \emph{AWS}). Además también desarrollé conjuntamente con Karlo Verde la aplicación móvil usando \emph{Flutter}. 
+  }\\&\\
+  
+  \emph{Feb 2019 - Jul 2019} & Trainee Supplier Development Engineer \\&\emph{American Glass Products}\\&\footnotesize{AGP es una empresa que se encarga de fabricar y diseñar vidrio laminado para las principales marcas de automóviles del mundo, como Tesla, McLaren y BMW. En este puesto se me asigna la tarea de gestionar y desarrollar a los proveedores que usa la empresa para producir  los productos finales. Esto involucró aprender acerca de los \emph{Automotive Core Tools} (Las herramientas para gestionar la calidad en la industria automotriz) y Power BI (Herramienta de Business Intelligence).}\\&\\
+
+\\&\\
+  \emph{Abr 2018 - Dic 2018} & Practicante en el Laboratorio de Economía Experimental \\&\emph{\textsc{Pontificia Universidad Católica del Per\'u}}\\&\footnotesize{El Laboratorio de Economía Experimental (LEEX) se encarga de realizar experimentos para investigaciones relacionadas a la toma de decisiones. Estos experimentos son programados usando python. Trabajando aquí, adquirí experiencia en el manejo de sistemas operativos basados en Linux, en programación usando python; y en el mantenimiento de servidores usando AWS, en el que se alojaba una página web usada por LEEX.}\\&\\
+  
+  \emph{Ene 2017 - Jul 2017} & Practicante como  \emph{Programador} en la empresa \\&\emph{\textsc{Novatronic}}\\&\footnotesize{La empresa Novatronic se especializa en desarrollar software y soluciones transaccionales. Trabajando en ella, tuve la oportunidad de participar activamente en diferentes proyectos de desarrollo de software. En estos proyectos desarrollé programas en C y C\#, usando también SQL para manejar las bases de datos. Además participé también en la gestión de estos proyectos, en donde estuve encargado de que estos se completaran correctamente.}\\&\\
+
+ \emph{Mar 2016 - Dic 2016} & Instructor del curso \emph{Herramientas de simulación} en la \\&\emph{\textsc{Pontificia Universidad Católica del Perú}}\\&\footnotesize{El curso de \emph{Herramientas de simulación} tiene como objetivo enseñar a los estudiantes de Ingeniería Mecatrónica a modelar objetos en softwares como Inventor y Ansys, realizar simulaciones dinámicas y análisis de elementos finitos a estructuras.
+ }\\&\\
+\end{longtable}
 
 
 %Section: Education
@@ -141,13 +160,6 @@ ItalicFont = Fontin-Italic.otf
  \multicolumn{2}{c}{}
 \end{tabular}
 
-\section{\raisebox{-.3\baselineskip}{\skillsLogo}Habilidades}
-\begin{itemize}
-	\item \emph{\textsc{Liderazgo:}} \\Fui \textbf{Representante Estudiantil} ante  el consejo de la facultad  de \textbf{Estudios Generales Ciencias} de la PUCP y llevé a cabo proyectos que llevaron a la mejora de esta, como cambios en la malla curricular y mejoras en la infraestructura.
-	\item \emph{\textsc{Proactividad:}}\\ Pertenecí a la \textbf{Sección Estudiantil de Dirección de Proyectos}, SEDIPRO. En donde llevé a cabo diversos proyectos con la finalidad de promover las buenas prácticas en gestión de proyectos.
-	\item \emph{\textsc{Responsabilidad:}}\\ Egresé de la PUCP en el \textbf{7mo puesto} de mi promoción.
-	\item \emph{\textsc{Comunicación:}}\\ Trabajé durante dos ciclos como \textbf{Instructor} del curso \emph{Herramientas de Simulación}, curso del 6to ciclo de la carrera de Ing. Mecatrónica en el que se enseña a modelar sólidos en 3D usando Inventor y realizar tanto simulaciones dinámicas como análisis de elementos finitos a diversas máquinas o estructuras.
-\end{itemize}
 
 %Section: Languages
 \section{\raisebox{-.3\baselineskip}{\languagesLogo}Idiomas}
@@ -159,16 +171,6 @@ ItalicFont = Fontin-Italic.otf
 \textsc{Alemán:}&B2/1 Completo \newline \footnotesize{\textsc{Goethe Institut}} \newline \footnotesize{6 meses meses de Intercambio en Alemania} \\
 \end{tabular}
 \egroup
-
-\section{\raisebox{-.3\baselineskip}{\workLogo}Experiencia de Trabajo}
-\begin{tabular}{r|p{11cm}}
- \emph{Mar 2016 - Dic 2016} & Instructor del curso \emph{Herramientas de simulación} en la \\&\emph{\textsc{Pontificia Universidad Católica del Perú}}\\&\footnotesize{El curso de \emph{Herramientas de simulación} tiene como objetivo enseñar a los estudiantes de Ingeniería Mecatrónica a modelar objetos en softwares como Inventor y Ansys, realizar simulaciones dinámicas y análisis de elementos finitos a estructuras.
- }\\&\\
-  \emph{Ene 2017 - Jul 2017} & Practicante como  \emph{Programador} en la empresa \\&\emph{\textsc{Novatronic}}\\&\footnotesize{La empresa Novatronic se especializa en desarrollar software y soluciones transaccionales. Trabajando en ella, tuve la oportunidad de participar activamente en diferentes proyectos de desarrollo de software. En estos proyectos desarrollé programas en C y C\#, usando también SQL para manejar las bases de datos. Además participé también en la gestión de estos proyectos, en donde estuve encargado de que estos se completaran correctamente.}\\&\\
-    \emph{Abr 2018 - Dic 2018} & Practicante en el Laboratorio de Economía Experimental \\&\emph{\textsc{Pontificia Universidad Católica del Per\'u}}\\&\footnotesize{El Laboratorio de Economía Experimental (LEEX) se encarga de realizar experimentos para investigaciones relacionadas a la toma de decisiones. Estos experimentos son programados usando python. Trabajando aquí, adquirí experiencia en el manejo de sistemas operativos basados en Linux, en programación usando python; y en el mantenimiento de servidores usando AWS, en el que se alojaba una página web usada por LEEX.}\\&\\
-    \emph{Feb 2019 - Jul 2019} & Trainee Supplier Development Engineer \\&\emph{American Glass Products}\\&\footnotesize{AGP es una empresa que se encarga de fabricar y diseñar vidrio laminado para las principales marcas de automóviles del mundo, como Tesla, McLaren y BMW. En este puesto se me asigna la tarea de gestionar y desarrollar a los proveedores que usa la empresa para producir  los productos finales. Esto involucró aprender acerca de los \emph{Automotive Core Tools} (Las herramientas para gestionar la calidad en la industria automotriz) y Power BI (Herramienta de Business Intelligence).}\\&\\
-    \emph{Dic 2019 - A la Fecha} & Analista de Desarrollo \\&\emph{Simple Perú}\\&\footnotesize{Simple Perú es una empresa que se brinda soluciones tecnológicas a medida (Aplicaciones web, APIs REST, aplicaciones móviles y proyectos de IoT). Al trabajar aquí he tenido la oportunidad de desarrollar REST APIs para diferentes proyectos usando \emph{Python}, \emph{Flask} y \emph{PostgreSQL}. Además desarrollé también aplicaciones móviles tanto para Android como para iOS usando \emph{Flutter}. Participé también en el despliegue de las aplicaciones, tanto en ambientes de desarrollo como de producción, usando \emph{Docker}.}
-\end{tabular}
 
 
 
@@ -229,9 +231,17 @@ ItalicFont = Fontin-Italic.otf
  \multirow{2}{3cm}{\raggedleft\textsc{Primer Puesto} \break Jun 2019}  & 5ta Hackatón organizada por la \textit{Sociedad Nacional de Minería, Petróleo y Energía} (Per\'u) y por la CDE ESAN \\
   & \footnotesize{Solución Dtech: Sistema distribuido para monitoreo en tiempo real de la calidad de aire y alerta temprana ante eventos críticos.}\\
   & \footnotesize{\raisebox{-.3\baselineskip}{\includegraphics[height=1.3em]{Icons/link.png}} \href{https://perumin.com/perumin34/notas-de-prensa/estudiantes-de-la-pucp-crean-sistema-de-alerta-ante-accidentes-en-minas-subterraneas}{https://perumin.com/perumin34/notas-de-prensa/estudiantes-de-la-pucp-crean-sistema-de-alerta-ante-accidentes-en-minas-subterraneas}}
-  
- 
 \end{tabular}
+
+% %Section: Skills
+% \section{\raisebox{-.3\baselineskip}{\skillsLogo}Habilidades}
+% \begin{itemize}
+% 	\item \emph{\textsc{Liderazgo:}} \\Fui \textbf{Representante Estudiantil} ante  el consejo de la facultad  de \textbf{Estudios Generales Ciencias} de la PUCP y llevé a cabo proyectos que llevaron a la mejora de esta, como cambios en la malla curricular y mejoras en la infraestructura.
+% 	\item \emph{\textsc{Proactividad:}}\\ Pertenecí a la \textbf{Sección Estudiantil de Dirección de Proyectos}, SEDIPRO. En donde llevé a cabo diversos proyectos con la finalidad de promover las buenas prácticas en gestión de proyectos.
+% 	\item \emph{\textsc{Responsabilidad:}}\\ Egresé de la PUCP en el \textbf{7mo puesto} de mi promoción.
+% 	\item \emph{\textsc{Comunicación:}}\\ Trabajé durante dos ciclos como \textbf{Instructor} del curso \emph{Herramientas de Simulación}, curso del 6to ciclo de la carrera de Ing. Mecatrónica en el que se enseña a modelar sólidos en 3D usando Inventor y realizar tanto simulaciones dinámicas como análisis de elementos finitos a diversas máquinas o estructuras.
+% \end{itemize}
+
 \egroup
 
 %Section: Scholarships and additional info
