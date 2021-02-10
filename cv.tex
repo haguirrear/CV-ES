@@ -14,6 +14,7 @@
 \usepackage{multirow}
 \usepackage{tikz}
 \usepackage{graphicx,calc}
+\usepackage{longtable}
 
 %% ICONS
 
@@ -117,9 +118,20 @@ ItalicFont = Fontin-Italic.otf
 \end{tabular}
 
 \section{\raisebox{-.3\baselineskip}{\introductionLogo}Profile}
-Mechatronics Engineering graduate at the Pontifical Catholic University of Peru. Interested in topics related to Machine Learning, Data Science, Internet of Things, 3D Design and Automation. Speaks Spanish (mother tongue), English and German. Also with knowledge about programming languages (C, C++, C\#, Python and Dart), Business Analytics Software (Power BI) and CAD Software (Inventor, Fusion 360, AutoCAD and Eagle). Fond of photography, reading and sports.
+Mechatronics Engineering graduate at the Pontifical Catholic University of Peru. Interested in topics related to Software Development (Backend), Machine Learning, Data Science, Internet of Things. Speaks Spanish (mother tongue), English and German. Also with knowledge about programming languages (C, C++, Python, Dart and Javascript), Business Analytics Software (Power BI) and CAD Software (Inventor, Fusion 360, AutoCAD and Eagle). Fond of photography, reading and sports.
 
 %Section: Work Experience at the top
+\section{\raisebox{-.3\baselineskip}{\workLogo}Professional Experience}
+\begin{longtable}{r|p{11cm}}
+  \emph{Dic 2020 - to this time} & Development of a Mobile Training Application about COVID for medical staff located in Peru's jungle native communities.\\& \emph{GIZ (German Corporation for International Cooperation GmbH)}\\ & \footnotesize{GIZ is a German development agency that provides services in the field of international development cooperation. One of the projects of GIZ was to provide a Mobile Training Application about COVID to MINSA (Peru's Ministry of Health), to train and inform the medical staff located in the jungle's native communities. This app includes information about how to manage the pandemic in the context of these native communities. My responsibilities were to develop and deploy the backend that the app consumed. I used \emph{Python} and \emph{FastAPI} as framework, it was deployed in \emph{AWS} using \emph{Docker} containers with a proxy (\emph{Nginx}) and \emph{PostgreSQL} as database. Besides, I also developed the mobile application in conjunction with Karlo Verde (another freelancer developer). For that, we used \emph{Flutter} as framework and synchronization and caching techniques, Since the app was meant to work mainly in offline mode.}\\&\\
+  \emph{Dic 2019 - to this time} & Backend Developer \\&\emph{Simple Peru}\\&\footnotesize{Simple Peru is a company that builds tailored techonological solutions (Web applications, Rest APIs, mobile apps and IoT proyects). While working here I have developed several REST APIs using \emph{Python, Flask and PostgreSQL} and also a mobile app for Android and iOS using \emph{Flutter}. I was also responsible of the deployment and architectural design of the Backend Solutions. For that i used \emph{Docker} and the cloud services of \emph{AWS}.}\\&\\
+  \emph{Feb 2019 - Jul 2019} & Trainee Supplier Development Engineer \\&\emph{American Glass Products}\\&\footnotesize{AGP is a company that produces and designs laminated glass for the main automotive companies of the world, such as Tesla, McLaren, Volkswagen and BMW. Here I had the responsibility to manage and develop the suppliers that the company has. In order to achieve that,  I learned about the Automotive Core Tools (Quality Management tools for the Automotive industry) and about Business Intelligence using Power BI. Moreover, I also developed apps using Power Apps and Flow (Microsoft services)  that automated certain processes within the company..}\\&\\
+  \\&\\
+  \emph{Apr 2018 - Dic 2018} & Trainee in the Experimental Economics Laboratory \\&\emph{\textsc{Pontifical Catholic Univeristy of Peru}}\\&\footnotesize{The Experimental Economics Laboratory (LEEX in Spanish) carried on experiments on research related to decision making. These experiments were conducted on a computer by diverse people in the form of a game. They were programmed using python. Working here I acquired experience using python and in the management of web pages and servers using Amazon Web Services (AWS).}\\&\\
+  \emph{Jan 2017 - Jul 2017} & Trainee \emph{Programer} in \\&\emph{\textsc{Novatronic}}\\&\footnotesize{Novatronic is a company specialized in software development and transactional solutions. Working there, I had the chance to participate actively in several software development projects. I developed programs using C, C\# and SQL. Moreover, I took part also in the management of these projects, where I was responsible for carried them on correctly.}\\&\\
+ \emph{Mar 2016 - Dic 2016} & Professor's Assistant in the \emph{Simulation Tools} lecture of the \\&\emph{\textsc{Pontifical Catholic Univeristy of Peru}}\\&\footnotesize{The simulation tools lecture aims  to teach Mechatronic Engineering students to model 3D objects in software as Inventor an Ansys and to build dynamic simulations and apply Finite Elements Analysis to several machines and structures.
+ }\\&\\
+\end{longtable}
 
 
 %Section: Education
@@ -135,13 +147,14 @@ Mechatronics Engineering graduate at the Pontifical Catholic University of Peru.
  \multicolumn{2}{c}{}
 \end{tabular}
 
-\section{\raisebox{-.3\baselineskip}{\skillsLogo}Skills}
-\begin{itemize}
-	\item \emph{\textsc{Leadership:}} \\I was \textbf{student representative} on the General Sciences Faculty Council of the PUCP, where I carried on projects, which led to the improvement of the Faculty in its curriculum and infrastructure.  
-	\item \emph{\textsc{Proactividad:}}\\ I was part of the \textbf{Student Project Management Section} (SEDIPRO in Spanish). In which I carried on several projects to promote good practices in project management.
-	\item \emph{\textsc{Responsibility:}}\\ I graduated from the PUCP in the 7th place.
-	\item \emph{\textsc{Communication:}}\\ I worked as Professor's Assistant for a year in the lecture of \emph{Simulation Tools}. A lecture of the Mechatronics Engineering program where it is taught to model 3D solids using Inventor and also to build dynamic simulations and Finite Element Analysis of several machines or structures.
-\end{itemize}
+% Skills
+% \section{\raisebox{-.3\baselineskip}{\skillsLogo}Skills}
+% \begin{itemize}
+% 	\item \emph{\textsc{Leadership:}} \\I was \textbf{student representative} on the General Sciences Faculty Council of the PUCP, where I carried on projects, which led to the improvement of the Faculty in its curriculum and infrastructure.  
+% 	\item \emph{\textsc{Proactividad:}}\\ I was part of the \textbf{Student Project Management Section} (SEDIPRO in Spanish). In which I carried on several projects to promote good practices in project management.
+% 	\item \emph{\textsc{Responsibility:}}\\ I graduated from the PUCP in the 7th place.
+% 	\item \emph{\textsc{Communication:}}\\ I worked as Professor's Assistant for a year in the lecture of \emph{Simulation Tools}. A lecture of the Mechatronics Engineering program where it is taught to model 3D solids using Inventor and also to build dynamic simulations and Finite Element Analysis of several machines or structures.
+% \end{itemize}
 
 %Section: Languages
 \section{\raisebox{-.3\baselineskip}{\languagesLogo}Languages}
@@ -155,16 +168,6 @@ Mechatronics Engineering graduate at the Pontifical Catholic University of Peru.
 \end{tabular}
 \egroup
 
-\section{\raisebox{-.3\baselineskip}{\workLogo}Professional Experience}
-\begin{tabular}{r|p{11cm}}
- \emph{Mar 2016 - Dic 2016} & Professor's Assistant in the \emph{Simulation Tools} lecture of the \\&\emph{\textsc{Pontifical Catholic Univeristy of Peru}}\\&\footnotesize{The simulation tools lecture aims  to teach Mechatronic Engineering students to model 3D objects in software as Inventor an Ansys and to build dynamic simulations and apply Finite Elements Analysis to several machines and structures.
- }\\&\\
-  \emph{Jan 2017 - Jul 2017} & Trainee \emph{Programer} in \\&\emph{\textsc{Novatronic}}\\&\footnotesize{Novatronic is a company specialized in software development and transactional solutions. Working there, I had the chance to participate actively in several software development projects. I developed programs using C, C\# and SQL. Moreover, I took part also in the management of these projects, where I was responsible for carried them on correctly.}\\&\\
-    \emph{Apr 2018 - Dic 2018} & Trainee in the Experimental Economics Laboratory \\&\emph{\textsc{Pontifical Catholic Univeristy of Peru}}\\&\footnotesize{The Experimental Economics Laboratory (LEEX in Spanish) carried on experiments on research related to decision making. These experiments were conducted on a computer by diverse people in the form of a game. They were programmed using python. Working here I acquired experience using python and in the management of web pages and servers using Amazon Web Services (AWS).}\\&\\
-    \emph{Feb 2019 - Jul 2019} & Trainee Supplier Development Engineer \\&\emph{American Glass Products}\\&\footnotesize{AGP is a company that produces and designs laminated glass for the main automotive companies of the world, such as Tesla, McLaren, Volkswagen and BMW. Here I had the responsibility to manage and develop the suppliers that the company has. In order to achieve that,  I learned about the Automotive Core Tools (Quality Management tools for the Automotive industry) and about Business Intelligence using Power BI. Moreover, I also developed apps using Power Apps and Flow (Microsoft services)  that automated certain processes within the company..}\\&\\
-    \emph{Dic 2019 - to this time} & Backend Developer \\&\emph{Simple Peru}\\&\footnotesize{Simple Peru is a company that builds tailored techonological solutions (Web applications, Rest APIs, mobile apps and IoT proyects). While working here I have developed several REST APIs using \emph{python, Flask and PostgreSQL} and also a mobile app for Android and iOS using \emph{Flutter}. I have also help with the deploy of this projects by using \emph{Docker}.}
-
-\end{tabular}
 
 
 
@@ -177,11 +180,12 @@ Mechatronics Engineering graduate at the Pontifical Catholic University of Peru.
 {>{\raggedleft\arraybackslash}p{3cm}%
 >{\raggedright\arraybackslash}p{11cm}%
 }
-\textsc{Programing Languages} & \textbullet \hspace{0.5em}\textit{Python:} Implementation of machine learning and Artificial \hspace*{0.7em} Intelligence algorithms and REST APIs\\
+\textsc{Programing Languages} & \textbullet \hspace{0.5em}\textit{Python:} Implementation of machine learning and Artificial \hspace*{0.7em} Intelligence algorithms and REST APIs using \emph{Flask} and \emph{FastAPI}\\
  & \textbullet \hspace{0.5em}\textit{C\# :} Applications with GUI development .\\
 & \textbullet \hspace{0.5em}\textit{C:} APIs development and embedded systems programming. \\
 & \textbullet \hspace{0.5em}\textit{C++ :} Applications with GUI and APIs development.\\
 & \textbullet \hspace{0.5em}\textit{Dart:} Apps development with \textit{Flutter}. \\
+& \textbullet \hspace{0.5em}\textit{Javascript:} Simple REST APIs using \emph{Node JS} and Basic frontend using \emph{Vue}. \\
 \end{tabular}
 \vspace{1em}
 
@@ -189,16 +193,18 @@ Mechatronics Engineering graduate at the Pontifical Catholic University of Peru.
 {>{\raggedleft\arraybackslash}p{3cm}%
 >{\raggedright\arraybackslash}p{11cm}}
 %\textbullet \hspace{0.5em}\textit{Matlab:} Nivel Intermedio. Con experiencia en procesamiento de \hspace*{0.95em}señales e imágenes  y diseño de sistemas de control. \\
-\multirow{2}{3cm}{\raggedleft\textsc{Conocimiento en Software}} &  \textbullet \hspace{0.5em}\textit{Word, Powerpoint y Excel:} Nivel Avanzado. \\
+\multirow{2}{3cm}{\raggedleft\textsc{Software knowledge}} 
+& \textbullet \hspace{0.5em}\textit{Linux based Systems:} Intermediate level.\\
+& \textbullet \hspace{0.5em}\textit{SQL:} Intermediate level. Databases management.\\
+& \textbullet \hspace{0.5em}\textit{Git:} Intermidiate. Used in sofware development projects.\\
+& \textbullet \hspace{0.5em}\textit{Docker:} Intermediate. Containers managment and deploy to production and development environments.\\
+& \textbullet \hspace{0.5em}\textit{AWS:} Intermediate. Deployment of backend services and usage of their products (S3, ECR, EC2, etc).\\
+&  \textbullet \hspace{0.5em}\textit{Word, Powerpoint y Excel:} Advanced Level. \\
 & \textbullet \hspace{0.5em}\textit{Inventor:} Advanced level. 3D objects and technical drawings design. \\
 & \textbullet \hspace{0.5em}\textit{Fusion 360:} Advanced level. 3D objects and technical drawings \hspace*{0.7em} design. \\
 & \textbullet \hspace{0.5em}\textit{Eagle:} Intermediate level. Electronic boards design.\\
 & \textbullet \hspace{0.5em}\LaTeX: Intermediate level.\\
 & \textbullet \hspace{0.5em}\textit{ANSYS Workbench:} Intermediate level. Mechanic components \hspace*{0.7em} simulation.\\
-& \textbullet \hspace{0.5em}\textit{Linux based Systems:} Intermediate level.\\
-& \textbullet \hspace{0.5em}\textit{SQL:} Intermediate level. Databases management.\\
-& \textbullet \hspace{0.5em}\textit{Git:} Intermidiate. Used in sofware development projects.\\
-& \textbullet \hspace{0.5em}\textit{Docker:} Basic. Containers managment and deploy to production and development environments.\\
 %& \textbullet \hspace{0.5em}\textit{Ladder:} Nivel Intermedio.\\
 \end{tabular}
 \egroup
